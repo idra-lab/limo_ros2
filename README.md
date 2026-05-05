@@ -133,6 +133,14 @@ Or using the teleop twist keyboard tool to command the robot with keybord inputs
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/ackermann_steering_controller/reference -p stamped:=true
 ```
 
+Finally, launch SLAM in another terminal: 
+
+```bash
+source /opt/ros/humble/setup.bash
+source ~/limo_ws/install/setup.bash
+ros2 launch limo_bringup limo_slam_toolbox.launch.py 
+```
+
 ## Maintainer
 
 Tommaso Faraci  
